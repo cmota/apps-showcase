@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cmota.github.io/matchday26/sitemap.xml
