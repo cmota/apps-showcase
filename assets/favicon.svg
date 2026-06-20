@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Apps">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#070a0e"/>
+    </linearGradient>
+    <linearGradient id="md" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6bff"/>
+      <stop offset="1" stop-color="#0a3d8f"/>
+    </linearGradient>
+    <linearGradient id="pc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fe0f4"/>
+      <stop offset="1" stop-color="#27a9c4"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="116" fill="url(#bg)"/>
+  <!-- top-left: Matchday -->
+  <rect x="96"  y="96"  width="148" height="148" rx="40" fill="url(#md)"/>
+  <circle cx="170" cy="170" r="26" fill="#ef4135"/>
+  <!-- top-right: PoolCast -->
+  <rect x="268" y="96"  width="148" height="148" rx="40" fill="url(#pc)"/>
+  <!-- bottom row: coming soon -->
+  <rect x="96"  y="268" width="148" height="148" rx="40" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="268" y="268" width="148" height="148" rx="40" fill="#ffffff" fill-opacity="0.07"/>
+  <g fill="#ffffff" fill-opacity="0.28">
+    <circle cx="170" cy="342" r="11"/><circle cx="342" cy="342" r="11"/>
+  </g>
+</svg>
