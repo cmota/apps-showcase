@@ -42,7 +42,7 @@ both at the root of its own domain and from these subfolders.
 
 1. Push to a repo and enable GitHub Pages (serve from the branch root).
 2. The default base URL assumed in `robots.txt` and `sitemap.xml` is
-   `https://cmota.github.io/apps-website/`. If you use a different repo name or a
+   `https://cmota.github.io/apps-showcase/`. If you use a different repo name or a
    custom domain, update those two files accordingly.
 
 > Matchday 26 is an independent, unofficial fan app and is not affiliated with FIFA

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Update the host below if you deploy to a different domain.
-Sitemap: https://cmota.github.io/apps-website/sitemap.xml
+Sitemap: https://cmota.github.io/apps-showcase/sitemap.xml
