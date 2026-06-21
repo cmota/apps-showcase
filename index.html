@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apps — small, focused apps for Android</title>
-<meta name="description" content="A small collection of independent, privacy-first apps for Android. Matchday 26 — your 2026 World Cup companion. PoolCast — forecast your pool's water temperature. No ads, no trackers, no accounts.">
+<meta name="description" content="A small collection of independent, privacy-first apps for Android. Matchday 26 — your 2026 World Cup companion. PoolCast — pool water-temperature forecasts. Seients — live study-seat availability in Barcelona. No ads, no trackers, no accounts.">
 <meta name="theme-color" content="#070a0e">
 <meta name="robots" content="index,follow">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Apps — small, focused apps for Android">
-<meta property="og:description" content="Independent, privacy-first apps for Android. Matchday 26 and PoolCast — with more on the way. No ads, no trackers, no accounts.">
+<meta property="og:description" content="Independent, privacy-first apps for Android. Matchday 26, PoolCast and Seients — with more on the way. No ads, no trackers, no accounts.">
 <meta property="og:image" content="assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Apps — small, focused apps for Android">
-<meta name="twitter:description" content="Independent, privacy-first apps for Android. Matchday 26 and PoolCast — more coming soon.">
+<meta name="twitter:description" content="Independent, privacy-first apps for Android. Matchday 26, PoolCast and Seients — more coming soon.">
 <meta name="twitter:image" content="assets/og-image.png">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -42,7 +42,12 @@
       "@type":"SoftwareApplication","name":"PoolCast","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 8.0+",
       "description":"Forecast your swimming pool's water temperature for the week ahead — and what it costs to heat. No sensor needed.",
       "url":"poolcast/","downloadUrl":"https://play.google.com/store/apps/details?id=com.cmota.poolcast",
-      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}}
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+    {"@type":"ListItem","position":3,"item":{
+      "@type":"SoftwareApplication","name":"Seients","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 8.0+",
+      "description":"Live free-seat availability for Barcelona's municipal study halls and 50+ public libraries, with alerts when your favourite frees up.",
+      "url":"seients/","downloadUrl":"https://play.google.com/store/apps/details?id=com.cmota.seients",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}}
   ]
 }
 </script>
@@ -70,7 +75,7 @@
       <h1>Small apps,<br><span class="grad">made with care.</span></h1>
       <p class="lead">Independent, privacy-first apps for Android. No ads, no trackers, no accounts — each one does a single thing, and does it well.</p>
       <div class="meta-chips">
-        <span class="chip"><b>2</b> apps live</span>
+        <span class="chip"><b>3</b> apps live</span>
         <span class="chip">Android</span>
         <span class="chip">Privacy-first</span>
         <span class="chip">No ads, ever</span>
@@ -129,14 +134,37 @@
           </div>
         </article>
 
-        <!-- Coming soon -->
+        <!-- Seients -->
+        <article class="app-card se">
+          <span class="top-glow" aria-hidden="true"></span>
+          <div class="app-media"><img src="assets/seients-icon.png" alt="Seients app icon" width="104" height="104"></div>
+          <div class="app-body">
+            <h2 class="app-name"><a class="stretched" href="seients/index.html">Seients</a></h2>
+            <p class="app-tagline">Find a free seat, right now</p>
+            <p class="app-desc">Live free-seat counts for Barcelona's study halls and 50+ libraries, with alerts when your favourite frees up.</p>
+            <ul class="chips">
+              <li>Live seats</li><li>50+ libraries</li><li>Free-up alerts</li>
+            </ul>
+            <div class="app-actions">
+              <span class="visit"><span class="dot" aria-hidden="true"></span>Visit site
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+              <a class="play" href="https://play.google.com/store/apps/details?id=com.cmota.seients" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13 12 3.6 21.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1zM14.7 13.7l2.6 2.6-9.2 5.3 6.6-7.9zM18.4 9.1l3 1.7c.7.4.7 1.4 0 1.8l-3 1.7-2.9-2.6 2.9-2.6zM8.1 2.4l9.2 5.3-2.6 2.6L8.1 2.4z"/></svg>
+                Google Play
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Coming soon (full-width banner) -->
         <article class="app-card soon" id="soon">
-          <div class="soon-inner">
-            <div class="soon-mark" aria-hidden="true">+</div>
+          <div class="soon-mark" aria-hidden="true">+</div>
+          <div class="soon-text">
             <h2>More apps coming soon</h2>
             <p>Something new is already in the works.</p>
-            <a href="mailto:cafonsomota@gmail.com?subject=App%20idea">Have an idea? Say hello →</a>
           </div>
+          <a class="soon-cta" href="mailto:cafonsomota@gmail.com?subject=App%20idea">Have an idea? Say hello →</a>
         </article>
 
       </div>

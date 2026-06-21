@@ -67,6 +67,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(8,11,15,.72);backdro
 .app-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
 .app-card.md{--accent:#2f6bff;--accent-2:#0a3d8f;--spark:#ef4135}
 .app-card.pc{--accent:#38c6e0;--accent-2:#1c87a2;--spark:#f2c14e}
+.app-card.se{--accent:#e8853a;--accent-2:#a85a22;--spark:#54b06a}
 .app-card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line));box-shadow:0 28px 70px -24px color-mix(in srgb,var(--accent) 75%,transparent)}
 .app-card .top-glow{position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,transparent,var(--accent),var(--spark),transparent);opacity:.0;transition:opacity .2s ease}
 .app-card:hover .top-glow{opacity:.9}
@@ -95,15 +96,16 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(8,11,15,.72);backdro
 .app-card:focus-within{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
 .stretched:focus-visible{outline:none}
 
-/* ---- coming soon card ---- */
-.app-card.soon{background:transparent;border-style:dashed;border-color:var(--line-2);align-items:center;justify-content:center;text-align:center;min-height:360px}
+/* ---- coming soon (full-width banner) ---- */
+.app-card.soon{grid-column:1 / -1;flex-direction:row;align-items:center;gap:20px;min-height:0;padding:22px 28px;background:transparent;border-style:dashed;border-color:var(--line-2);text-align:left}
 .app-card.soon:hover{transform:none;box-shadow:none;border-color:var(--line-2)}
-.soon-inner{padding:40px 26px;display:flex;flex-direction:column;align-items:center}
-.soon-mark{width:64px;height:64px;border-radius:18px;border:1px dashed var(--line-2);display:grid;place-items:center;margin-bottom:18px;color:var(--muted-2);font-size:1.9rem;font-weight:300;line-height:1}
-.soon h2{font-size:1.3rem;color:var(--muted);margin-bottom:.3em}
-.soon p{color:var(--muted-2);font-size:.94rem;margin:0 0 14px;max-width:24ch}
-.soon a{position:relative;z-index:2;font-weight:700;font-size:.92rem;color:#cdd7e6;border-bottom:1px solid transparent;transition:border-color .15s ease}
-.soon a:hover{border-color:#cdd7e6}
+.soon-mark{width:52px;height:52px;border-radius:14px;border:1px dashed var(--line-2);display:grid;place-items:center;color:var(--muted-2);font-size:1.7rem;font-weight:300;line-height:1;flex:0 0 auto}
+.soon-text{flex:1 1 auto;min-width:0}
+.soon-text h2{font-size:1.2rem;color:var(--text);margin:0 0 .12em}
+.soon-text p{font-size:.94rem;color:var(--muted);margin:0}
+.soon-cta{position:relative;z-index:2;flex:0 0 auto;font-weight:700;font-size:.93rem;color:#cdd7e6;border:1px solid var(--line-2);padding:9px 16px;border-radius:999px;white-space:nowrap;transition:background .15s ease}
+.soon-cta:hover{background:rgba(255,255,255,.05)}
+@media(max-width:900px){.app-card.soon{flex-direction:column;text-align:center;gap:14px}}
 
 /* ---- values strip ---- */
 .values{padding:34px 0 70px}
